@@ -1,0 +1,15 @@
+Package: makepkg
+Title: Make Package for PKGBUILD
+Version: 0.1.0
+Authors@R: 
+    person("Felipe", "Carlos", , "efelipecarlos@gmail.com", role = c("aut", "cre"))
+Description: This package creates Arch Linux PKGBUILD from R DESCRIPTION files.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports: 
+    desc,
+    fs,
+    jinjar,
+    openssl

@@ -1,0 +1,43 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# makepkg
+
+The `makepkg` R package is a utility designed to bridge the world of R development with Arch Linux package management. By leveraging the DESCRIPTION file present in R packages, `makepkg` automates the creation of Arch Linux package descriptions (PKGBUILD files). 
+
+This simplifies the process of packaging R packages for Arch Linux, making it easier for R developers to distribute their work to a wider audience.
+
+## Features
+
+- **Automated PKGBUILD Generation**: `makepkg` reads the DESCRIPTION file from an R package and generates a corresponding PKGBUILD file, which is essential for creating Arch Linux packages.
+
+- **Simplified Workflow**: `makepkg` reduces the manual effort required to package R packages for Arch Linux, streamlining the distribution process.
+
+## Installation
+
+You can install the development version of `makepkg` like so:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("m3nin0-labs/makepkg")
+```
+
+## Usage
+
+To use `makepkg`, you simply need to call its main function with the path to the R package's DESCRIPTION file and the desired output path for the PKGBUILD file:
+
+```r
+makepkg::makepkg("/path/to/DESCRIPTION", "/path/to/output/file")
+```
+
+This function call will generate a PKGBUILD file at the specified output location, which can then be used with the standard Arch Linux packaging tools to create an Arch package.
