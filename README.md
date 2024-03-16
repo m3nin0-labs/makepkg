@@ -1,5 +1,5 @@
 
-# makepkg
+# 📦 makepkg
 
 The `makepkg` R package is a utility designed to bridge the world of R
 development with Arch Linux package management. By leveraging the

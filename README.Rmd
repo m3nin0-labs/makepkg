@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# makepkg
+# 📦 makepkg
 
 The `makepkg` R package is a utility designed to bridge the world of R development with Arch Linux package management. By leveraging the DESCRIPTION file present in R packages, `makepkg` automates the creation of Arch Linux package descriptions (PKGBUILD files). 
 
